@@ -10,7 +10,7 @@ df = pd.read_csv('/home/maria91/Documents/Data_Analyst/SQL/Project_7/shopping_tr
 # Create the engine object
 engine = create_engine("postgresql+psycopg2://postgres:Perrona123@localhost:5432/postgres")
 
-# PClean column names
+# Clean column names
 df.columns = df.columns.str.lower()
 
 def clean_col_names(df):
